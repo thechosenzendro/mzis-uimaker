@@ -2,26 +2,29 @@ jstomik = []
 function countObjectKeys(obj) {
     return Object.keys(obj).length;
 }
-function MakeNewElement() {
-    tag = prompt("Tag:", "");
-    id = prompt("Id:", "");
+function MakeNewInput() {
     newelement = {}
-    newelement["tag"] = tag;
-    newelement["id"] = id;
+    newelement["tag"] = "input"
+    newelement["onchange"] = "ChangeContractData(this.id)"
+    newelement["id"] = document.getElementById("idecko").value;
+    newelement["placeholder"] = document.getElementById("placeholder").value;
+
     jstomik.push(newelement);
-    AddNewProperty(id, true)
+    Render(jstomik)
+}
+function MakeNewElement() {
+    newelement = {}
+    newelement["tag"] = document.getElementById("tag").value;
+    newelement["id"] = document.getElementById("id").value;
+
+    jstomik.push(newelement);
+    Render(jstomik)
 }
 
-function AddNewProperty(idecko, isFromNewElement) {
-    if (isFromNewElement) {
-        id = idecko
-    }
-    else {
-        id = prompt("Id:", "");
-    }
-
-    property = prompt("Property:", "");
-    value = prompt("Value:", "");
+function AddNewProperty() {
+    id = document.getElementById("ide").value;
+    property = document.getElementById("property").value;
+    value = document.getElementById("value").value;
     for (var i = 0; i < jstomik.length; i++) {
         obj = jstomik[i]
         if (obj['id'] == id) {

@@ -10,9 +10,20 @@
 
 <body>
   <h1>MZIS UIMAKER</h1>
-  <button onclick="MakeNewElement()">Make new element</button>
-  <button onclick="AddNewProperty('', false)">Add new property</button>
-  <button onclick="RenderData()">Zkopírovat data</button>
+  <input placeholder="id" id="idecko"> <br>
+  <input placeholder="placeholder" id="placeholder">
+  <button class="Prim Auto" onclick="MakeNewInput()">Make new input</button> <br>
+  <p>--------------------------------------</p>
+  <input placeholder="tag" id="tag"> <br>
+  <input placeholder="id" id="id">
+  <button class="Prim Auto" onclick="MakeNewElement()">Make new element</button><br>
+  <p>--------------------------------------</p>
+  <input placeholder="id" id="ide"> <br>
+  <input placeholder="property" id="property"><br>
+  <input placeholder="value" id="value">
+  <button class="Prim Auto" onclick="AddNewProperty('', false)">Add new property</button><br>
+  <button class="Prim Auto" onclick="RenderData()">Zkopírovat data</button><br>
+  <p>-----------------------Renderováno:--------------------------</p>
   <div id="editordiv" style="width: 100%; height: 100%;"></div>
 </body>
 

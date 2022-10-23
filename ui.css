@@ -1,3 +1,65 @@
  input {
      width: 500px;
  }
+
+ div {
+     background-color: rgb(243, 239, 239);
+     text-align: center;
+     border: 2px solid #8a8080;
+     padding: 10px;
+     box-shadow: 10px 10px 10px rgb(138, 127, 127);
+     border-radius: 10px;
+ }
+
+ p,
+ h1,
+ label {
+     font-family: 'Roboto', sans-serif;
+ }
+
+ input {
+     font-size: 13.5px;
+     padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+     border: 2px solid #8a8080;
+     border-radius: 10px;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ .Prim {
+     font-size: 13.5px;
+     height: 45px;
+     width: 100px;
+     font-family: "Roboto", sans-serif;
+     font-weight: bold;
+     color: white;
+     background-color: #4285F4;
+     border-radius: 10px;
+     border: 2px solid #ffffff00;
+
+ }
+
+ .Prim:hover {
+     background-color: #006ac1;
+ }
+
+ .Seco {
+     font-size: 13.5px;
+     height: 45px;
+     width: 110px;
+     font-family: "Roboto", sans-serif;
+     font-weight: bold;
+     color: white;
+     background-color: #868286;
+     border-radius: 10px;
+     border: 2px solid rgba(255, 255, 255, 0);
+ }
+
+ .Seco:hover {
+     background-color: #535253;
+ }
+
+ .Auto {
+     width: auto;
+ }
